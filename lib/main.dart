@@ -3,7 +3,8 @@ import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:food_donation/login.dart';
-import 'package:food_donation/signup.dart';
+import 'package:food_donation/signupD.dart';
+import 'package:food_donation/signupR.dart';
 
 main() {
   runApp(Myapp());
@@ -32,7 +33,7 @@ class HomeScreen extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('assets/image/img2.jpg'), fit: BoxFit.cover),
+              image: AssetImage('assset/image/img2.jpg'), fit: BoxFit.cover),
         ),
         child: Container(
           decoration: BoxDecoration(
@@ -85,7 +86,7 @@ class HomeScreen extends StatelessWidget {
                         showDialog(
                             context: context,
                             builder: (context) => SimpleDialog(
-                                  title: const Text('User Type'),
+                                  title: const Text('Sign up as a'),
                                   children: <Widget>[
                                     SimpleDialogOption(
                                       padding: EdgeInsets.symmetric(
@@ -93,7 +94,7 @@ class HomeScreen extends StatelessWidget {
                                       onPressed: () {
                                         Navigator.of(context).push(
                                           MaterialPageRoute(builder: (ctx) {
-                                            return signup();
+                                            return signupD();
                                           }),
                                         );
                                       },
@@ -106,7 +107,11 @@ class HomeScreen extends StatelessWidget {
                                       padding: EdgeInsets.symmetric(
                                           horizontal: 24, vertical: 20),
                                       onPressed: () {
-                                        Navigator.pop(context);
+                                        Navigator.of(context).push(
+                                          MaterialPageRoute(builder: (ctx) {
+                                            return signupR();
+                                          }),
+                                        );
                                       },
                                       child: Text(
                                         'Reciever',
