@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/txt_head"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:textSize="28dp"
+            android:fontFamily="cursive"
+            android:textStyle="bold"
+            android:textColor="@color/blue1"
+            android:layout_height="wrap_content"
+            android:text="Your Donation History" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="serif"
+                android:textSize="14sp"
+                android:id="@+id/btn_donated"
+                android:backgroundTint="@color/blue1"
+                android:text="Donated"/>
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:layout_marginLeft="70dp"
+                android:textSize="14sp"
+                android:id="@+id/btn_sponsored"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/blue1"
+                android:text="Sponsored"/>
+        </LinearLayout>
+        <ListView
+
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/lst_items"
+            android:layout_marginTop="30dp" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.chip.ChipGroup>
+
+</FrameLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".R_Account_Fragment">
+
+    <ScrollView
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/edit"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/transparent"
+                    android:src="@drawable/baseline_edit_24" />
+
+                <ImageButton
+                    android:id="@+id/clear"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/transparent"
+                    android:src="@drawable/baseline_clear_all_24" />
+
+                <ImageButton
+                    android:id="@+id/save"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/transparent"
+                    android:src="@drawable/baseline_save_24" />
+
+                <ImageButton
+                    android:id="@+id/logout"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/transparent"
+                    android:src="@drawable/baseline_logout_24" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_gravity="end"
+                android:layout_height="20dp">
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/blue1"
+                    android:textSize="8dp"
+                    android:fontFamily="serif"
+                    android:paddingLeft="8dp"
+                    android:textStyle="bold"
+                    android:text="Edit"/>
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/blue1"
+                    android:textSize="8dp"
+                    android:fontFamily="serif"
+                    android:paddingLeft="8dp"
+                    android:textStyle="bold"
+                    android:text="Reset"/>
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/blue1"
+                    android:textSize="8dp"
+                    android:fontFamily="serif"
+                    android:paddingLeft="8dp"
+                    android:textStyle="bold"
+                    android:text="Save"/>
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/blue1"
+                    android:textSize="8dp"
+                    android:fontFamily="serif"
+                    android:paddingLeft="6dp"
+                    android:textStyle="bold"
+                    android:text="Logout"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:textColor="@color/blue1"
+                android:textSize="28dp"
+                android:text="User Profile"
+                android:layout_gravity="center"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/name"
+                android:fontFamily="serif"
+                android:textSize="12sp"
+                android:textColorHint="@color/blue1"
+                android:background="@drawable/profile_edit"
+                android:drawableLeft="@drawable/name_p"
+                android:drawablePadding="8dp"
+                android:hint="Name"
+                android:padding="8dp"
+                android:textColor="@color/blue1"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="40dp"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:fontFamily="serif"
+                android:textSize="12sp"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:textColorHint="@color/blue1"
+                android:background="@drawable/profile_edit"
+                android:drawableLeft="@drawable/email_p"
+                android:drawablePadding="8dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:textColor="@color/blue1"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/phone"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"
+                android:textSize="12sp"
+                android:textColorHint="@color/blue1"
+                android:background="@drawable/profile_edit"
+                android:drawableLeft="@drawable/phone_p"
+                android:drawablePadding="8dp"
+                android:hint="Phone Number"
+                android:padding="8dp"
+                android:inputType="phone"
+                android:textColor="@color/blue1"
+                android:textColorHighlight="@color/cardview_dark_background" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/address"
+                android:background="@drawable/profile_edit"
+                android:drawableLeft="@drawable/home_p"
+                android:drawablePadding="8dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"
+                android:hint="Full Address (Apartment Name, Post, Local body, District)"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:textColorHint="@color/blue1"
+                android:maxLines="6"
+                android:textColor="@color/blue1"
+                android:textColorHighlight="@color/cardview_dark_background"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/pin"
+                android:background="@drawable/profile_edit"
+                android:fontFamily="serif"
+                android:textSize="12sp"
+                android:inputType="phone"
+                android:drawableLeft="@drawable/pin_p"
+                android:drawablePadding="8dp"
+                android:hint="Pincode"
+                android:padding="8dp"
+                android:textColorHint="@color/blue1"
+                android:textColor="@color/blue1"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="15dp"/>
+            <Button
+                android:id="@+id/change"
+                android:layout_width="wrap_content"
+                android:fontFamily="serif"
+                android:backgroundTint="@color/blue1"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="100dp"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:text="Change Password"/>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

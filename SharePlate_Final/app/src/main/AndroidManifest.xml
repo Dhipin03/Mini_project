@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.send" />
+    <uses-permission android:name="com.google.android.c2dm.permission.Recieve" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Share Plate"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SharePlate_Final"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".RateUs"
+            android:exported="false" />
+        <activity
+            android:name=".Test1"
+            android:exported="false" />
+        <activity
+            android:name=".Test"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".MessageClass"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.Recieve" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Donor_donate_detail"
+            android:exported="false" />
+        <activity
+            android:name=".Donation_Detail"
+            android:exported="false" />
+        <activity
+            android:name=".Receiver_Detail"
+            android:exported="false" />
+        <activity
+            android:name=".Splash_Screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Receiver_Home"
+            android:exported="false" />
+        <activity
+            android:name=".Donor_Home"
+            android:exported="false" />
+        <activity
+            android:name=".Forgot2"
+            android:exported="false" />
+        <activity
+            android:name=".Signup"
+            android:exported="false" />
+        <activity
+            android:name=".Signupreciever"
+            android:exported="false" />
+        <activity
+            android:name=".Forgotpassword"
+            android:exported="false" />
+        <activity
+            android:name=".First"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+
+        <receiver android:name=".NotificationReceiver" />
+    </application>
+
+</manifest>

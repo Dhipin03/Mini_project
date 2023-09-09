@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".Donation_Detail">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_head"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginTop="100dp"
+                android:fontFamily="cursive"
+                android:textColor="@color/blue1"
+                android:layout_height="wrap_content"
+                android:text="Donation Details" />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:textColor="@color/blue1"
+                android:text="Item Name"
+                android:paddingTop="15dp"
+                android:textColorHint="@color/black"
+                android:fontFamily="serif"
+                android:paddingEnd="10dp"
+                android:paddingLeft="20dp" />
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue1"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Dietary + Food Type"
+                android:paddingTop="15dp"
+                android:textColorHint="@color/black"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"/>
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/blue1"
+                android:layout_gravity="center"
+                android:text="Date and Time"
+                android:gravity="center"
+                android:textColorHint="@color/black"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif" />
+
+            <TextView
+                android:id="@+id/remains"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/blue1"
+                android:layout_gravity="center"
+                android:text="Remains"
+                android:gravity="center"
+                android:textColorHint="@color/black"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif" />
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:text="location"
+                android:textColor="@color/blue1"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"/>
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:text="Contact"
+                android:textColor="@color/blue1"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif" />
+
+            <EditText
+                android:id="@+id/qty"
+                android:inputType="phone"
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+                android:textColorHint="@color/red"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/new_edittext"
+                android:fontFamily="serif"
+                android:textColor="@color/red"
+                android:paddingEnd="10dp"
+                android:hint="Quantity You Need"
+                android:paddingLeft="20dp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center">
+                <Button
+                    android:layout_width="120dp"
+                    android:id="@+id/book"
+                    android:text="Book"
+                    android:fontFamily="serif"
+                    android:textSize="14sp"
+                    android:backgroundTint="@color/blue"
+                    android:textColor="@color/black"
+                    android:layout_height="50dp"/>
+
+                <Button
+                    android:layout_width="120dp"
+                    android:id="@+id/cancel"
+                    android:textSize="14sp"
+                    android:text="Cancel"
+                    android:layout_marginLeft="20dp"
+                    android:backgroundTint="@color/blue"
+                    android:fontFamily="serif"
+                    android:layout_marginBottom="90dp"
+                    android:textColor="@color/black"
+                    android:layout_height="50dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">SharePlate_Final</string>
+    <string name="app"><b>Share Plate</b></string>
+    <string name="signup"><u>Sign Up Now</u>.</string>
+    <string name="login"><u>Login Now</u>.</string>
+    <string name="forget"><u>Forgot Password?</u>.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="meal">
+        <item>Choose Your Food Type</item>
+        <item>Meals</item>
+        <item>Bread</item>
+        <item>Snacks</item>
+        <item>Fruits</item>
+        <item>Drinks</item>
+        <item>Pastries</item>
+    </string-array>
+    <string-array name="places">
+        <item>Ernakulam, Kerala</item>
+        <item>Thrissur, Kerala</item>
+        <item>Mala, Thrissur</item>
+        <item>Kodakara, Thrissur</item>
+        <item>Nellayi, Thrissur</item>
+        <item>Madathumpady, Mala</item>
+        <item>Paravoor, Ernakulam</item>
+        <item>Manjaly, Paravoor</item>
+        <item>Poyya, Kodungallur</item>
+        <item>Kodungallur, Thrissur</item>
+        <item>Irinjalakuda, Thrissur</item>
+        <item>Tana Junction, Irinjalakuda</item>
+    </string-array>
+    <string-array name="dietary">
+        <item>Choose Your Dietary</item>
+        <item>Vegetarian</item>
+        <item>Non Vegetarian</item>
+        <item>Vegan</item>
+        <item>Gluten free</item>
+        <item>Lactose free</item>
+    </string-array>
+    <string-array name="receivertype">
+        <item>Choose Who You are?</item>
+        <item>Normal User</item>
+        <item>Charity Organizations</item>
+        <item>Orphanages</item>
+        <item>Old Age Home</item>
+    </string-array>
+    <string-array name="education">
+        <item>Choose Your Educational Status</item>
+        <item>Matriculation</item>
+        <item>Plus Two</item>
+        <item>Graduation</item>
+        <item>Post Graduation</item>
+    </string-array>
+
+    <string-array name="rtype">
+        <item>Choose Whom you Want to Sponsor?</item>
+        <item>Charity Organization</item>
+        <item>Orphanage</item>
+        <item>Old Age Home</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".Donor_donate_detail">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginTop="50dp"
+                android:fontFamily="cursive"
+                android:textColor="@color/blue1"
+                android:layout_height="wrap_content"
+                android:text="Donation Details" />
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/blue1"
+                android:text="Food Type"
+                android:paddingTop="15dp"
+                android:textColorHint="@color/black"
+                android:fontFamily="serif"
+                android:paddingEnd="10dp"
+                android:paddingLeft="20dp" />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue1"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Item Name"
+                android:textColorHint="@color/black"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"/>
+
+            <TextView
+                android:id="@+id/remains"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/blue1"
+                android:layout_gravity="center"
+                android:text="Remains"
+                android:gravity="center"
+                android:textColorHint="@color/black"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif" />
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="50dp"
+                android:fontFamily="cursive"
+                android:textColor="@color/blue1"
+                android:layout_height="wrap_content"
+                android:text="Bookings On This Donation" />
+
+            <ListView
+                android:id="@+id/lst_orders"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="40dp" />
+
+            <Button
+                    android:layout_width="120dp"
+                    android:id="@+id/cancel"
+                    android:textSize="14sp"
+                    android:text="Cancel"
+                    android:layout_marginTop="70dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/blue"
+                    android:fontFamily="serif"
+                    android:layout_marginBottom="90dp"
+                    android:textColor="@color/black"
+                    android:layout_height="50dp"/>
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".RateUs">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/green"
+        android:text="Rate Us"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:layout_gravity="center"/>
+    <EditText
+        android:layout_width="300dp"
+        android:id="@+id/txt_feed"
+        android:layout_height="80dp"
+        android:hint="Enter Your Feed back Here"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:textSize="12sp"
+        android:layout_gravity="center"
+        android:background="@drawable/new_edittext"
+        android:layout_marginTop="40dp"
+        android:maxLines="10"
+        android:inputType="textMultiLine"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="serif"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="serif"
+            android:text="2"
+            android:hint="Enter Your Feedback"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="serif"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="serif"
+            android:text="4"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="serif"
+            android:text="5"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/btn_submit"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:backgroundTint="@color/blue1"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/btn_cancel"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:fontFamily="serif"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/blue1"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/green"
+        android:text="User Reviews"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_gravity="center"/>
+
+    <ListView
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:id="@+id/lst_rate"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:dividerHeight="1.2dp"
+        android:divider="@color/blue1"/>
+</LinearLayout>

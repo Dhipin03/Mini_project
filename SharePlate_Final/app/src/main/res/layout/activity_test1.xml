@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Test1">
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:background="@drawable/new_edittext"
+        android:layout_marginTop="30dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+
+        android:hint="Name"
+        android:inputType="textPersonName"/>
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:text="*"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/red"/>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:background="@drawable/new_edittext"
+        android:layout_marginTop="5dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"/>
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:background="@drawable/new_edittext"
+        android:layout_marginTop="20dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:ems="10"
+        android:hint="phone"
+        android:inputType="textPersonName"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="100dp"
+        android:layout_height="39dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:backgroundTint="@color/cyan_dark"
+        android:hint="click"/>
+
+    <Spinner
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:id="@+id/spinner1"
+        android:background="@drawable/custom_spinner"
+        android:layout_gravity="center"
+        />
+
+
+
+
+
+</LinearLayout>
